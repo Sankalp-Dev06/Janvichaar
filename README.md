@@ -72,33 +72,34 @@ uvicorn backend.app:app --reload
 Open ```index.html``` in your browser or serve it using a static file server.
 
 ## Project Structure
+```
+JanVichaar/
+├── frontend/                  # Frontend UI files
+│   ├── index.html             # Home page
+│   ├── auth.html              # Authentication page
+│   ├── login.html             # Login page
+│   ├── signup.html            # Signup page
+│   ├── pricing.html           # (Optional) Pricing or plans
+│   ├── profile.html           # User profile page
+│   ├── style.css              # CSS for styling
+│   ├── script.js              # Main JS for frontend logic
+│   ├── auth.js                # JS for auth logic
+│   ├── navigation.js          # JS for navbar and routing
+│   └── profile.js             # JS for profile interactivity
 
-Project Root/
-├── frontend/
-│   ├── auth.html
-│   ├── auth.js
-│   ├── index.html
-│   ├── login.html
-│   ├── navigation.js
-│   ├── pricing.html
-│   ├── profile.html
-│   ├── profile.js
-│   ├── script.js
-│   ├── signup.html
-│   └── style.css
-│
-├── backend/
-│   ├── _pycache_/
-│   ├── app.py
-│   ├── fetch_reddit.py
-│   ├── fetch_youtube.py
-│   └── sentiment_model.py
-│
-├── .venv/
-├── .idea/
-├── .env
-├── check.py
-└── requirements.txt
+├── backend/                   # Backend API & ML logic
+│   ├── app.py                 # FastAPI main app
+│   ├── fetch_youtube.py       # Fetch comments from YouTube API
+│   ├── fetch_reddit.py        # Fetch comments from Reddit API
+│   └── sentiment_model.py     # Sentiment analysis using Transformers/VADER
+
+├── .venv/                     # Virtual environment (ignored by Git)
+├── .idea/                     # PyCharm IDE config files (can be ignored)
+├── .env                       # Environment variables (API keys etc.)
+├── check.py                   # Test script for quick checks
+├── requirements.txt           # Python dependencies
+```
+
 
 ## Screenshots
 
