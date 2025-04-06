@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JanVichar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li class="project-title">
+        JanVichar
+        <div class="theme-switch">
+          <button id="theme-toggle" class="theme-toggle" aria-label="dark">
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li>
+        <a href="#sentiment" class="active"
+          ><i class="fas fa-chart-bar"></i> Sentiment Analysis</a
+        >
+      </li>
+      <li>
+        <a href="#emotions"><i class="fas fa-heart"></i>Emotion Breakdown</a>
+      </li>
+      <li>
+        <a href="pricing.html"><i class="fas fa-tags"></i> Pricing</a>
+      </li>
+      <li class="auth-buttons">
+        <a href="login.html" class="login-btn"
+          ><i class="fas fa-sign-in-alt"></i> Login</a
+        >
+        <a href="signup.html" class="signup-btn"
+          ><i class="fas fa-user-plus"></i> Sign Up</a
+        >
+      </li>
+      <li class="settings">
+        <a href="profile.html"><i class="fas fa-cog"></i> Settings</a>
+      </li>
+    </ul>
+
+    <main class="content">
+      <h1>JanVichar Insights Hub</h1>
+      <p>AI-powered sentiment analysis dashboard for social media insights</p>
+
+      <div id="sentiment" class="card">
+        <div class="card-item sentiment-overview">
+          <h3>Sentiment Overview <span>Last 24 hours</span></h3>
+
+          <!-- Comment Analysis Form -->
+          <div class="comment-analysis-section">
+            <h2>Analyze Comments</h2>
+            <div class="form-group">
+              <label for="platform">Select Platform:</label>
+              <select id="platform" class="platform-select">
+                <option value="youtube">YouTube</option>
+                <option value="reddit">Reddit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="input">Enter URL:</label>
+              <input
+                type="text"
+                id="input"
+                class="url-input"
+                placeholder="Enter video or post URL"
+              />
+            </div>
+
+            <button class="analyze-button" onclick="analyzeComments()">
+              <i class="fas fa-chart-bar"></i> Analyze
+            </button>
+
+            <!-- Result display -->
+            <div id="results" class="analysis-results"></div>
+          </div>
+
+          <div class="chart-container">
+            <div class="chart-header">
+              <h3 id="chart-title">Sentiment Trends <span class="live-badge">Live</span></h3>
+              <div class="chart-actions">
+                <button class="refresh-btn" onclick="initializeCharts()">
+                  <i class="fas fa-sync-alt"></i>
+                </button>
+              </div>
+            </div>
+            <div class="chart-wrapper">
+              <canvas id="redditChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- Latest Comments Section -->
+          <div class="latest-comments-section">
+            <h3>
+              <i class="fas fa-comment-alt"></i>
+              Top Comments
+            </h3>
+            <div class="comments-list">
+              <!-- Comments will be dynamically inserted here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="analytics-grid">
+        <!-- Emotion Breakdown Card -->
+        <div id="emotions" class="analytics-card">
+          <h3>Emotion Breakdown</h3>
+          <div class="emotion-content">
+            <div class="chart-container" style="height: 300px">
+              <canvas id="emotionPieChart"></canvas>
+            </div>
+            <div class="emotion-list">
+              <div class="emotion-item">
+                <div class="emotion-info">
+                  <span>Joy</span>
+                  <span class="emotion-value">35%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 35%; background-color: #22c55e"
+                  ></div>
+                </div>
+              </div>
+              <div class="emotion-item">
+                <div class="emotion-info">
+                  <span>Sadness</span>
+                  <span class="emotion-value">25%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 25%; background-color: #3b82f6"
+                  ></div>
+                </div>
+              </div>
+              <div class="emotion-item">
+                <div class="emotion-info">
+                  <span>Anger</span>
+                  <span class="emotion-value">15%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 15%; background-color: #ef4444"
+                  ></div>
+                </div>
+              </div>
+              <div class="emotion-item">
+                <div class="emotion-info">
+                  <span>Fear</span>
+                  <span class="emotion-value">10%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 10%; background-color: #8b5cf6"
+                  ></div>
+                </div>
+              </div>
+              <div class="emotion-item">
+                <div class="emotion-info">
+                  <span>Surprise</span>
+                  <span class="emotion-value">15%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 15%; background-color: #f59e0b"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>
