@@ -73,11 +73,16 @@ Open ```index.html``` in your browser or serve it using a static file server.
 
 ## Screenshots
 
-
-
-
-
 ![WhatsApp Image 2025-04-06 at 23 39 09_56e47c18](https://github.com/user-attachments/assets/2de7561b-2cef-4198-8906-327bd2cfb816)
 
+![WhatsApp Image 2025-04-06 at 23 39 21_18655155](https://github.com/user-attachments/assets/05e59700-2b39-4751-a473-b606ee16924d)
+
+![WhatsApp Image 2025-04-06 at 23 39 45_452090cb](https://github.com/user-attachments/assets/904c6f4d-d08f-4f3e-baed-35c27a909b49)
+
+![WhatsApp Image 2025-04-06 at 23 40 12_40052db0](https://github.com/user-attachments/assets/a0beab1b-9ec5-419b-9ebd-2e2ed85e9c56)
+
+![WhatsApp Image 2025-04-06 at 23 40 23_0b73b794](https://github.com/user-attachments/assets/dfa2c645-ed3e-44ea-a3d0-94bde53729bd)
+
+![WhatsApp Image 2025-04-06 at 23 41 52_3a34bc9e](https://github.com/user-attachments/assets/fc571d1b-d4f2-429f-a502-ba57227bb273)
 
 
