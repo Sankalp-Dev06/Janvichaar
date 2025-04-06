@@ -29,7 +29,7 @@ A real-time sentiment analysis and emotion detection platform analyzing public o
 
 ---
 
-for emotion classification:
+For emotion classification:
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
@@ -46,3 +46,31 @@ def analyze_sentiment(text):
     scores = softmax(output.logits.numpy()[0])
     labels = ['negative', 'neutral', 'positive']
     return labels[scores.argmax()], float(scores.max())
+```
+
+## 🔧 Installation & Usage
+
+1. Clone the repository
+
+```
+git clone https://github.com/your-username/JanVichaar.git
+cd JanVichaar
+```
+2. Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+3. Run FastAPI Server
+
+```
+uvicorn backend.app:app --reload
+```
+
+4. Access the Frontend
+Open ```index.html``` in your browser or serve it using a static file server.
+
+
+
+
