@@ -101,7 +101,7 @@ JanVichaar/
 ```
 
 
-## Screenshots
+## Preview 💻
 
 ![WhatsApp Image 2025-04-06 at 23 39 09_56e47c18](https://github.com/user-attachments/assets/2de7561b-2cef-4198-8906-327bd2cfb816)
 
