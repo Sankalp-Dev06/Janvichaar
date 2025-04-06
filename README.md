@@ -71,6 +71,11 @@ uvicorn backend.app:app --reload
 4. Access the Frontend
 Open ```index.html``` in your browser or serve it using a static file server.
 
+##Screenshots
+
+
+
+
 
 
 
