@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+transformers
+torch
+google-api-python-client
+praw
+snscrape
+emoji
+matplotlib
+wordcloud
+nltk
+scikit-learn
+bertopic
