@@ -71,11 +71,13 @@ uvicorn backend.app:app --reload
 4. Access the Frontend
 Open ```index.html``` in your browser or serve it using a static file server.
 
-##Screenshots
+## Screenshots
 
 
 
 
+
+![WhatsApp Image 2025-04-06 at 23 39 09_56e47c18](https://github.com/user-attachments/assets/2de7561b-2cef-4198-8906-327bd2cfb816)
 
 
 
