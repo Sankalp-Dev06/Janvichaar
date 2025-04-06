@@ -71,6 +71,35 @@ uvicorn backend.app:app --reload
 4. Access the Frontend
 Open ```index.html``` in your browser or serve it using a static file server.
 
+## Project Structure
+
+Project Root/
+├── frontend/
+│   ├── auth.html
+│   ├── auth.js
+│   ├── index.html
+│   ├── login.html
+│   ├── navigation.js
+│   ├── pricing.html
+│   ├── profile.html
+│   ├── profile.js
+│   ├── script.js
+│   ├── signup.html
+│   └── style.css
+│
+├── backend/
+│   ├── _pycache_/
+│   ├── app.py
+│   ├── fetch_reddit.py
+│   ├── fetch_youtube.py
+│   └── sentiment_model.py
+│
+├── .venv/
+├── .idea/
+├── .env
+├── check.py
+└── requirements.txt
+
 ## Screenshots
 
 ![WhatsApp Image 2025-04-06 at 23 39 09_56e47c18](https://github.com/user-attachments/assets/2de7561b-2cef-4198-8906-327bd2cfb816)
@@ -84,5 +113,6 @@ Open ```index.html``` in your browser or serve it using a static file server.
 ![WhatsApp Image 2025-04-06 at 23 40 23_0b73b794](https://github.com/user-attachments/assets/dfa2c645-ed3e-44ea-a3d0-94bde53729bd)
 
 ![WhatsApp Image 2025-04-06 at 23 41 52_3a34bc9e](https://github.com/user-attachments/assets/fc571d1b-d4f2-429f-a502-ba57227bb273)
+
 
 
