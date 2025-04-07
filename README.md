@@ -142,9 +142,10 @@ JanVichaar/
 
 ## Contributors
 
-1. Sankalp Tiwari
-2. Ujjwal Chaurasia
-3. Himanshu Gupta
-4. Gaurav Pawar
+1. Vivek Aggarwal
+2. Sankalp Tiwari
+3. Ujjwal Chaurasia
+4. Himanshu Gupta
+5. Gaurav Pawar
 
 
