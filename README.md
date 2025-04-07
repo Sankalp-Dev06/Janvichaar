@@ -140,5 +140,11 @@ JanVichaar/
 
 ![WhatsApp Image 2025-04-06 at 23 41 52_3a34bc9e](https://github.com/user-attachments/assets/fc571d1b-d4f2-429f-a502-ba57227bb273)
 
+## Contributors
+
+1. Sankalp Tiwari
+2. Ujjwal Chaurasia
+3. Himanshu Gupta
+4. Gaurav Pawar
 
 
