@@ -100,8 +100,31 @@ JanVichaar/
 ├── requirements.txt           # Python dependencies
 ```
 
+## 📊 Usage Guide
 
-## Preview 💻
+1. Choose a platform: YouTube or Reddit.
+
+2. Enter a topic or keyword.
+
+3. View real-time sentiment results.
+
+4. Analyze emotions with transformer predictions.
+
+5. Explore graphical insights and statistics.
+
+## 📌 Future Plans
+
+1. Add support for Twitter and Instagram
+
+2. Dashboard for historical sentiment tracking
+
+3. User authentication and bookmarking
+
+4. Cloud deployment with Docker + CI/CD pipeline
+
+5. Multilingual sentiment analysis (Hindi, Bengali, etc.)
+
+## 💻 Preview
 
 ![WhatsApp Image 2025-04-06 at 23 39 09_56e47c18](https://github.com/user-attachments/assets/2de7561b-2cef-4198-8906-327bd2cfb816)
 
