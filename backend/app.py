@@ -13,7 +13,8 @@ import os
 app = FastAPI()
 
 # ✅ Mount the frontend directory
-app.mount("/", StaticFiles(directory=os.path.abspath("../frontend"), html=True), name="static")
+app.mount("/", StaticFiles(directory="frontend", html=True), name="static")
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
